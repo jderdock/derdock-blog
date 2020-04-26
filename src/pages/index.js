@@ -38,19 +38,25 @@ const IndexPage = ({ data }) => (
      editor.
     </p>
    </section>
-   <section class="px-2 sm:px-2 max-w-3xl mx-auto">
+   <section class="px-2 sm:px-2 max-w-3xl mx-auto mt-10">
     <h1>Recent Blog Posts</h1>
     {data.allMarkdownRemark.edges.map(({ node }) => (
      <div key={node.id}>
-      <article>
-       <h1>
-        <Link to={node.frontmatter.slug}>{node.frontmatter.title} </Link>
+      <article class="mb-3">
+       <h1 class="text-base m-0 font-semibold">
+        <Link to={node.frontmatter.slug} class="hover:underline">
+         {node.frontmatter.title}
+        </Link>
        </h1>
-       <time pubdate="pubdate">{node.frontmatter.date}</time>
+       <time pubdate="pubdate" class="text-sm">
+        {node.frontmatter.date}
+       </time>
       </article>
      </div>
     ))}
-    <Link to="/blog">Check out the full blog</Link>
+    <Link to="/blog" class="mt-6 block font-bold uppercase font-sans">
+     Check out the full blog &rarr;
+    </Link>
    </section>
   </div>
  </Layout>

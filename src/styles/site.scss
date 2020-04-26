@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+p {
+ a {
+
+  &:link,
+  &:visited {
+   @apply underline;
+   @apply text-gray-700;
+  }
+
+  &:active,
+  &:hover {
+   @apply text-gray-900;
+  }
+ }
+}
+
+article {
+ h1 {
+  @apply font-extrabold;
+ }
+}
