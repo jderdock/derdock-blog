@@ -6,7 +6,7 @@ export default ({ data }) => {
  const post = data.markdownRemark
  return (
   <Layout>
-   <div class="max-w-3xl mx-auto">
+   <div class="px-2 sm:px-0 max-w-3xl mx-auto">
     <p>
      <Link to="/">Blog</Link> /{' '}
      <span class="italic">{post.frontmatter.title}</span>
