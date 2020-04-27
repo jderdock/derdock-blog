@@ -2,8 +2,3 @@ article {
  @apply border-b;
  @apply border-dotted;
  @apply border-gray-500;
-}
-
-article:last-of-type {
- border-bottom: none;
-}

@@ -15,7 +15,7 @@ const IndexPage = ({ data }) => (
     <Link to={node.frontmatter.slug}>
      <article
       key={node.id}
-      class="pb-8 pt-4 hover:bg-gray-300 hover:cursor-pointer"
+      class="pb-4 pt-4 px-12 hover:bg-gray-300 hover:cursor-pointer"
      >
       <h1 class="text-xl m-0 font-extrabold">{node.frontmatter.title}</h1>
       <time pubdate="pubdate" class="text-xs font-sans">

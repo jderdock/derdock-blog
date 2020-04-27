@@ -40,21 +40,26 @@ const IndexPage = ({ data }) => (
      editor.
     </p>
    </section>
-   <section class="px-2 sm:px-2 max-w-3xl mx-auto mt-10">
+   <section class="px-2 sm:px-2 max-w-3xl mx-auto mt-12">
     <h1>Recent Blog Posts</h1>
-    {data.allMarkdownRemark.edges.map(({ node }) => (
-     <div key={node.id}>
-      <Link to={node.frontmatter.slug}>
-       <article class="pb-8 pt-4 hover:bg-gray-300 hover:cursor-pointer">
-        <h1 class="text-base m-0 font-semibold">{node.frontmatter.title}</h1>
-        <time pubdate="pubdate" class="text-sm">
-         {node.frontmatter.date}
-        </time>
-       </article>
-      </Link>
-     </div>
-    ))}
-    <Link to="/blog" class="mt-6 block font-bold uppercase font-sans">
+    <div class="md:flex">
+     {data.allMarkdownRemark.edges.map(({ node }) => (
+      <div key={node.id}>
+       <Link to={node.frontmatter.slug}>
+        <article class="pb-8 pt-4 px-2 hover:bg-gray-300 hover:cursor-pointer">
+         <h1 class="text-base m-0 font-semibold">{node.frontmatter.title}</h1>
+         <time pubdate="pubdate" class="text-sm">
+          {node.frontmatter.date}
+         </time>
+        </article>
+       </Link>
+      </div>
+     ))}
+    </div>
+    <Link
+     to="/blog"
+     class="mt-6 block font-bold uppercase font-sans bg-black px-6 py-3 uppercase text-white"
+    >
      Check out the full blog &rarr;
     </Link>
    </section>

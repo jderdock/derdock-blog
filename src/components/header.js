@@ -6,7 +6,7 @@ const Header = ({ siteTitle }) => (
  <header class="px-2 sm:px-2 max-w-3xl mx-auto mt-6">
   <div class="sm:flex sm:flex-wrap sm:justify-between">
    <h1 class="text-center sm:text-left text-base">
-    <Link to="/">James Derdock, Jr.</Link>
+    <Link to="/">James Derdock Jr</Link>
    </h1>
    <nav>
     <ul class="flex justify-between mx-auto max-w-xs sm:max-w-none font-sans">

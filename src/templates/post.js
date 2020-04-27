@@ -19,10 +19,13 @@ export default ({ data }) => {
       <time pubdate="pubdate">{post.frontmatter.date}</time>
      </p>
     </header>
-    <div dangerouslySetInnerHTML={{ __html: post.html }} />
+    <div dangerouslySetInnerHTML={{ __html: post.html }} class="py-6" />
    </article>
    <div class="px-2 sm:px-0 max-w-3xl mx-auto">
-    <Link to="/blog" class="mt-6 block font-bold uppercase font-sans">
+    <Link
+     to="/blog"
+     class="mt-6 block font-bold uppercase font-sans bg-black px-6 py-3 uppercase text-white"
+    >
      &larr; Back To Blog
     </Link>
    </div>
