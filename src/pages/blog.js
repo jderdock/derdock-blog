@@ -12,15 +12,18 @@ const IndexPage = ({ data }) => (
   <section class="px-2 sm:px-2 max-w-3xl mx-auto">
    <h1 class="mb-12">Blog Posts</h1>
    {data.allMarkdownRemark.edges.map(({ node }) => (
-    <article key={node.id} class="pb-8 pt-4 hover:bg-gray-300">
-     <Link to={node.frontmatter.slug}>
+    <Link to={node.frontmatter.slug}>
+     <article
+      key={node.id}
+      class="pb-8 pt-4 hover:bg-gray-300 hover:cursor-pointer"
+     >
       <h1 class="text-xl m-0 font-extrabold">{node.frontmatter.title}</h1>
       <time pubdate="pubdate" class="text-xs font-sans">
        {node.frontmatter.date}
       </time>
       <p class="mt-2">{node.frontmatter.description}</p>
-     </Link>
-    </article>
+     </article>
+    </Link>
    ))}
   </section>
  </Layout>

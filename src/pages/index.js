@@ -45,7 +45,7 @@ const IndexPage = ({ data }) => (
     {data.allMarkdownRemark.edges.map(({ node }) => (
      <div key={node.id}>
       <Link to={node.frontmatter.slug}>
-       <article class="pb-8 pt-4 hover:bg-gray-300">
+       <article class="pb-8 pt-4 hover:bg-gray-300 hover:cursor-pointer">
         <h1 class="text-base m-0 font-semibold">{node.frontmatter.title}</h1>
         <time pubdate="pubdate" class="text-sm">
          {node.frontmatter.date}
