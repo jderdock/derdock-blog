@@ -4,6 +4,8 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
+import './index.scss'
+
 const IndexPage = ({ data }) => (
  <Layout>
   <SEO title="Home" />
@@ -42,16 +44,14 @@ const IndexPage = ({ data }) => (
     <h1>Recent Blog Posts</h1>
     {data.allMarkdownRemark.edges.map(({ node }) => (
      <div key={node.id}>
-      <article class="mb-3">
-       <h1 class="text-base m-0 font-semibold">
-        <Link to={node.frontmatter.slug} class="hover:underline">
-         {node.frontmatter.title}
-        </Link>
-       </h1>
-       <time pubdate="pubdate" class="text-sm">
-        {node.frontmatter.date}
-       </time>
-      </article>
+      <Link to={node.frontmatter.slug}>
+       <article class="pb-8 pt-4 hover:bg-gray-300">
+        <h1 class="text-base m-0 font-semibold">{node.frontmatter.title}</h1>
+        <time pubdate="pubdate" class="text-sm">
+         {node.frontmatter.date}
+        </time>
+       </article>
+      </Link>
      </div>
     ))}
     <Link to="/blog" class="mt-6 block font-bold uppercase font-sans">
