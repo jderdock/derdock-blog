@@ -10,7 +10,7 @@ const IndexPage = ({ data }) => (
  <Layout>
   <SEO title="Home" />
   <div>
-   <section class="px-2 sm:px-2 max-w-3xl mx-auto">
+   <section class="px-2 lg:px-0 max-w-3xl mx-auto">
     <h1>About Me</h1>
     <p>
      I’m a web developer, husband and father of two. I’m using this blog as a

@@ -9,13 +9,13 @@ import './blog.scss'
 const IndexPage = ({ data }) => (
  <Layout>
   <SEO title="Blog" />
-  <section class="px-2 sm:px-2 max-w-3xl mx-auto">
+  <section class="px-2 lg:px-0 max-w-3xl mx-auto">
    <h1 class="mb-12">Blog Posts</h1>
    {data.allMarkdownRemark.edges.map(({ node }) => (
     <Link to={node.frontmatter.slug}>
      <article
       key={node.id}
-      class="pb-4 pt-4 px-12 hover:bg-gray-300 hover:cursor-pointer"
+      class="pb-4 pt-4 px-6 hover:bg-gray-300 hover:cursor-pointer"
      >
       <h1 class="text-xl m-0 font-extrabold">{node.frontmatter.title}</h1>
       <time pubdate="pubdate" class="text-xs font-sans">
