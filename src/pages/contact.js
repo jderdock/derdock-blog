@@ -7,7 +7,7 @@ const ContactPage = () => (
   <SEO title="Contact" description="How to get in touch with James Derdock" />
   <section class="px-2 lg:px-0 max-w-3xl mx-auto">
    <h1>Contact</h1>
-   <form name="contact" method="POST" data-netlify="true">
+   <form name="contact" method="POST" data-netlify="true" action="/thank-you">
     <p>
      <label class="text-base m-0 font-semibold font-sans">
       Your Name:{' '}
