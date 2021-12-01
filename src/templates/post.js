@@ -24,7 +24,7 @@ export default ({ data }) => {
    <div class="px-2 lg:px-0 max-w-3xl mx-auto">
     <Link
      to="/blog"
-     class="mt-6 block font-bold uppercase font-sans bg-black px-6 py-3 uppercase text-white"
+     class="mt-6 block font-bold uppercase font-sans bg-black px-6 py-3 uppercase text-white hover:bg-red-600"
     >
      &larr; Back To Blog
     </Link>

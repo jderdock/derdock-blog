@@ -40,7 +40,7 @@ const IndexPage = ({ data }) => (
      editor.
     </p>
    </section>
-   <section class="px-2 sm:px-2 max-w-3xl mx-auto mt-12">
+   <section class="px-2 lg:px-0 max-w-3xl mx-auto mt-12">
     <h1>Recent Blog Posts</h1>
     <div class="md:flex">
      {data.allMarkdownRemark.edges.map(({ node }) => (
@@ -58,7 +58,7 @@ const IndexPage = ({ data }) => (
     </div>
     <Link
      to="/blog"
-     class="mt-6 block font-bold uppercase font-sans bg-black px-6 py-3 uppercase text-white"
+     class="mt-6 block font-bold uppercase font-sans bg-black px-6 py-3 uppercase text-white hover:bg-red-600"
     >
      Check out the full blog &rarr;
     </Link>
