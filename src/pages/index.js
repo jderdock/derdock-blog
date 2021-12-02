@@ -2,13 +2,13 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 
 import './index.scss'
 
 const IndexPage = ({ data }) => (
  <Layout>
-  <SEO title="Home" />
+  <Seo title="Home" />
   <div>
    <section class="px-2 lg:px-0 max-w-3xl mx-auto">
     <h1>About Me</h1>

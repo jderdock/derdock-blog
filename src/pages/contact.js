@@ -1,10 +1,10 @@
 import React from 'react'
 import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 
 const ContactPage = () => (
  <Layout>
-  <SEO title="Contact" description="How to get in touch with James Derdock" />
+  <Seo title="Contact" description="How to get in touch with James Derdock" />
   <section class="px-2 lg:px-0 max-w-3xl mx-auto">
    <h1>Contact</h1>
    <form name="contact" method="POST" data-netlify="true" action="/thank-you">

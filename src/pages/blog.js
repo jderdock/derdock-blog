@@ -2,13 +2,13 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 
 import './blog.scss'
 
 const IndexPage = ({ data }) => (
  <Layout>
-  <SEO title="Blog" />
+  <Seo title="Blog" />
   <section class="px-2 lg:px-0 max-w-3xl mx-auto">
    <h1 class="mb-6 lg:mb-12">Blog Posts</h1>
    {data.allMarkdownRemark.edges.map(({ node }) => (
